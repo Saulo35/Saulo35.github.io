@@ -54,7 +54,7 @@ function fetchWeather(location) {
         .then(data => {
             locationElement.textContent    = data.name;
             temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
-            pressureElement.textContent    = `${Math.round(data.main.pressure)}hPa`;
+            pressureElement.textContent    = `${Math.round(data.main.pressure)} hPa`;
             descriptionElement.textContent = data.weather[0].description;
         })
         .catch(error => {
