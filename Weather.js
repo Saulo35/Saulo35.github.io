@@ -53,7 +53,7 @@ function fetchWeather(location) {
         .then(response => response.json())
         .then(data => {
             locationElement.textContent    = data.name;
-            temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
+            temperatureElement.textContent = `${Math.round(data.main.temp)}°Caaa`;
             pressureElement.textContent    = `Barometric Pressure = ${Math.round(data.main.pressure)} hPa`;
             descriptionElement.textContent = data.weather[0].description;
         })
